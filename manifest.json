@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "FeetFlixy",
+  "version": "1.0.0",
+  "description": "Netflix account manager",
+  "permissions": [
+    "activeTab",
+    "cookies",
+    "tabs",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.netflix.com/*",
+    "https://cookie-server-feetflixs-projects.vercel.app/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": { "48": "icon.png", "128": "icon.png" }
+  },
+  "icons": { "48": "icon.png", "128": "icon.png" },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
